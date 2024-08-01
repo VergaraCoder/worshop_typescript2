@@ -1,1 +1,1 @@
-# worshop_typescript2
+# worshop_typescript
