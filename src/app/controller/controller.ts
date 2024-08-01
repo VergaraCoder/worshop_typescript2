@@ -67,14 +67,11 @@ class managePrescripcion{
     static async sendPrescripcion(req:Request,res:Response){
         const newPres:prescripcion=new prescripcion(connection);
         try{            
-            const data:RowDataPacket[]=await newPres.sendPrescripcion(req.body);
-            
+            const data:RowDataPacket[]=await newPres.sendPrescripcion(req.body);          
             res.json({
                 message:data
             });
-        }catch(err:unknown){
-            console.log(err);
-            
+        }catch(err:unknown){            
             res.json({
                 message:"HUbo un error"
             }); 

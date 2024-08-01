@@ -88,7 +88,6 @@ class managePrescripcion {
                 });
             }
             catch (err) {
-                console.log(err);
                 res.json({
                     message: "HUbo un error"
                 });
